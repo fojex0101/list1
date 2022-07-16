@@ -1,0 +1,28 @@
+.main__button{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-image: url(./../../img/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1050px 100px; 
+    margin-top: 60px;
+}
+
+.h3{
+    align-items: center;
+    justify-content: center;
+ ;
+    margin-left: 100px;
+}
+
+.nt{
+    text-align: center;
+   
+    margin-left: 490px;
+    padding: 13px 30px;
+    border: none;
+    background: #F78B3B;
+    border-radius: 10px;
+    color: #ffff;
+}
