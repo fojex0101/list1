@@ -23,21 +23,30 @@
             </div>
             <form class="header__form" action="">
                 <label class="header__label">
+                        <img class="header__jy" src="./img/search.svg" alt="">
                     
                     <input class="header__input" type="text"  placeholder="Поиск" >
                 </label>
             </form>
-            <form class="header__language1 header__language1--active" action="">
-                
-                <div class="header__language">
-                    <div class="header__lang_list">
-                        <label class="header__lang-n" for="uz">uz</label>
-                        <input class="header__radio visually-hidden" type="radio" name="lang">
-                    </div>
-                    <div class="header__lang_list">
-                        <label class="header__lang-n" for="ru">ru</label>
-                        <input class=" header__radio visually-hidden " type="radio" name="lang">
-                    </div>
+            <form class="header__lang header__lang--active">
+                <div class="header__wrapper">
+                    <input
+                        class="header__radio visually-hidden"
+                        type="radio"
+                        name="lang"
+                        id="uz"
+                    />
+                    <label class="header__lang-label" for="uz">UZ</label>
+                </div>
+
+                <div class="header__wrapper">
+                    <input
+                        class="header__radio visually-hidden"
+                        type="radio"
+                        name="lang"
+                        id="ru"
+                    />
+                    <label class="header__lang-label" for="ru">RU</label>
                 </div>
             </form>
             <button type="submit" class="header__buttom">

@@ -66,17 +66,48 @@
   align-items: center;
 }
 
-.header__label::before {
-  position: absolute;
-  content: "";
-  margin-left: 15px;
-  width: 20px;
-  height: 20px;
-  background-image: url(./../../img/search.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  display: block;
+.header__lang {
+  background-color: #dce6ff;
+  border-radius: 39px;
+  width: 70px;
+  margin-left: 25px;
+  margin-right: 25px;
+  display: flex;
+  padding: 3px;
+  justify-content: space-between;
+}
+
+.header__lang-label {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 13px;
+  line-height: 12px;
+  color: #a6a6a6;
+  cursor: pointer;
+}
+
+.header__lang-label--active {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.header__radio:checked + label {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.header__buttom {
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #7296ec;
 }
 
 .header__input {
@@ -85,48 +116,13 @@
   padding-right: 14px;
   padding-left: 40px;
   border-radius: 60px;
-  background-color: white;
   border: none;
+  background-color: #ffffff;
 }
 
-.header__language {
-  background-color: #F6F6F6;
-  width: 70px;
-  display: flex;
-  justify-content: space-between;
-  margin-left: 25px;
-  margin-right: 25px;
-  padding: 13px;
-  border-radius: 39px;
-}
-
-.header__language__language1 {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  font-size: 13px;
-  line-height: 12px;
-  color: #a6a6a6;
-  cursor: pointer;
-}
-
-.header__radio:checked + lang-n {
-  color: rgba(0, 0, 0, 0);
-  background-color: white;
-}
-
-.header__buttom {
-  border-radius: 10px;
-  padding: 13px 20px;
-  background-color: #7296ec;
-  color: white;
-  border: none;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
+.header__jy {
+  position: absolute;
+  left: 15px;
 }
 
 .visually-hidden {
